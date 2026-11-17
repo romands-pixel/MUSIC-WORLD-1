@@ -67,5 +67,5 @@ app.get('/api/search', async (req, res) => {
 });
 
 app.get('/health', (_, res) => res.send('ok'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 app.listen(PORT, () => console.log('MUSIC WORLD en http://localhost:' + PORT));
