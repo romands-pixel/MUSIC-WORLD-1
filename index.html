@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUSIC WORLD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><span>♫</span> MUSIC<b>WORLD</b></div>
+  <form id="sf">
+    <input id="q" type="search" placeholder="Busca canciones, álbumes o artistas…" autocomplete="off" required>
+    <select id="qt"><option value="">Todo</option><option value="t">Canciones</option><option value="a">Álbumes</option><option value="b">Artistas</option></select>
+    <button>Buscar</button>
+  </form>
+</header>
+<nav id="nav"></nav>
+<main id="view"></main>
+<footer id="player">
+  <div class="np"><img id="pc" alt=""><div><strong id="pt">Elige algo para escuchar</strong><span id="pa"></span></div></div>
+  <div class="ctl">
+    <button id="bshuf" title="Aleatorio">⤮</button><button id="bprev" title="Anterior">⏮</button>
+    <div id="embed"><small>Pulsa ▶ en una portada y luego play en el reproductor oficial de Bandcamp.</small></div>
+    <button id="bnext" title="Siguiente">⏭</button><button id="brep" title="Repetir lista">⟲</button>
+    <button id="bfav" title="Favorito">♥</button>
+  </div>
+</footer>
+<dialog id="dlg"></dialog>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
